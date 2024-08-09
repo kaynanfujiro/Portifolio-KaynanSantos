@@ -9,9 +9,9 @@ export const Layout = ({children}:any ) => {
             <VStack spacing={8} align="stretch">
             <Box bg='#1b1b1b'>
                 <Header/>
-                <Flex justify={'center'} margin={0} padding={0} minHeight='100vh'>
+                <Box justifyContent={'center'} margin={0} padding={0} minHeight='100vh'>
                     {children}
-                </Flex>
+                </Box>
                 <Footer />
             </Box>
             </VStack>

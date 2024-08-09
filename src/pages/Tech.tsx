@@ -1,7 +1,9 @@
-import { Text } from "@chakra-ui/react"
+import { Flex, Text } from "@chakra-ui/react"
 
 export const Tech = () =>{
     return(
-        <Text color='orange'>Tech</Text>
+        <Flex justify='center'>
+            <Text color='orange'>Tech</Text>
+        </Flex>
     )
 }

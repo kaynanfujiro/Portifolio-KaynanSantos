@@ -18,9 +18,6 @@ export const Header = () => {
                 <Link to="/Projetos">
                     <StackHeader content='Projetos'/>
                 </Link>
-                <Link to="/Redes">
-                    <StackHeader content='Redes'/>
-                </Link>
             </HStack>
         </Flex>
         </>

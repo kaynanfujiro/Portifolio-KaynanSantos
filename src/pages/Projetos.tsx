@@ -1,3 +1,4 @@
+import { Flex } from "@chakra-ui/react"
 import { DioBank, LegadoDoOeste } from "../components/Projetos/ProjetosInfos"
 
 
@@ -5,8 +6,10 @@ import { DioBank, LegadoDoOeste } from "../components/Projetos/ProjetosInfos"
 export const Projetos = () =>{
     return(
         <>
-        <LegadoDoOeste/>
-        <DioBank/>
+        <Flex justify='Center'>
+            <LegadoDoOeste/>
+            <DioBank/>
+        </Flex>
         </>
     )
 }
