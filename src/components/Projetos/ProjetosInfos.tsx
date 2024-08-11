@@ -1,4 +1,4 @@
-import CardProject from "./ProjectsComponentes"
+import CardProject from "./ProjectsComponents"
 import ImageLegadoDoOeste from '../../Images/LegadoDoOeste.png'
 import ImageDioBank from '../../Images/DioBank.png'
 
