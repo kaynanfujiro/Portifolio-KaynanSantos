@@ -8,7 +8,7 @@ import animatedGif from "../Images/Programmer-svg.gif";
 export const Footer = () => {
     return(
     <>
-    <Flex padding={10} justify='center' align='center' marginTop='250px'>
+    <Flex padding={10} justify='center' align='center' fontFamily='Roboto'>
         <Image src={animatedGif}/>
         <Flex justify='center' align='flex-start' flexDirection='column'>
         <Text fontSize="2xl" color="#FFFF">Gostou? Entre em contato.</Text>
@@ -23,7 +23,7 @@ export const Footer = () => {
                     <Icon as={IconMail} boxSize='40px' transition="transform: 0.2s ease-in-out" _hover={{transform: "scale(1.2)"}}/>
                 </Link>
             </HStack>
-            <Button bg='#219ebc' borderRadius='10px' color='white' transition="transform: 0.2s ease-in-out" _hover={{ boxShadow: '0px 0px 20px 5px #219ebc'}}>Currículo</Button>
+                <Button bg='#219ebc' borderRadius='10px' color='white' transition="transform: 0.2s ease-in-out" _hover={{ boxShadow: '0px 0px 20px 5px #219ebc'}}>Currículo</Button>
         </Flex>
     </Flex>
     </>

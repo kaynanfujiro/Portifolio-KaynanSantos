@@ -6,9 +6,9 @@ import ProFile from "../Images/ProFile.png"
 export const Header = () => {
     return(
         <>
-        <Flex padding={10} justify='center' align='center' h='10vh'>
+        <Flex padding={10} justify='center' align='center' h='10vh' fontFamily='Roboto'>
             <Link to="/">
-                <Image w='120px' h='120px' src={ProFile}/>
+                <Image w='150px' h='150px' src={ProFile}/>
             </Link>
             <Spacer />
             <HStack spacing='24px'>

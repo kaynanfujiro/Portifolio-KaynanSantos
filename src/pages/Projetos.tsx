@@ -6,7 +6,7 @@ import { DioBank, LegadoDoOeste } from "../components/Projetos/ProjetosInfos"
 export const Projetos = () =>{
     return(
         <>
-        <Flex justify='Center'>
+        <Flex justify='Center' fontFamily='Roboto'>
             <LegadoDoOeste/>
             <DioBank/>
         </Flex>

@@ -23,7 +23,7 @@ export const DioBank = () => {
             Description="Projeto relaciona ao curso da DIO - FullStack"
             Tech={["React", "Typescript"]}
             View="View project >"
-            LinkUrl="https://gdd-legado-do-oeste.vercel.app"
+            LinkUrl="https://diobank-sable.vercel.app"
         />
     )
 }
