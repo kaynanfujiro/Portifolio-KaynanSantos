@@ -1,4 +1,4 @@
-import { Box, Flex, Spacer, Text } from "@chakra-ui/react"
+import { Flex, Spacer, Text } from "@chakra-ui/react"
 
 import logoHtml from "../Images/Logo-Html.svg"
 import logoCss from "../Images/Logo-Css.svg"
@@ -7,6 +7,7 @@ import logoReact from "../Images/Logo-React.svg"
 import logoNode from "../Images/Logo-Node.svg"
 import TechCards from "../components/Techs/TechsCards"
 import { useScrollRefs} from "../components/Scroll/ScrollRefSearch";
+import { TextAbout, TextFontAbout } from "../components/TextAbout"
 
 
 export const Tech = () =>{
@@ -15,22 +16,21 @@ export const Tech = () =>{
 
     return(
         <>
-        <Flex ref={techRef} justify='center' marginTop='370px' fontFamily='Roboto'>
+        <Flex ref={techRef} justify='center' marginTop='370px' fontFamily='Roboto' direction={['column','row']}>
             <Flex justify='center' flexDirection='column'>
-                <Flex justify='center' flexDirection='column' align='center' margin='10px'>
-                    <Text fontSize='2xl' color='#FEFDFB'>Sobre Mim</Text>
-                    <Text fontSize='2xl' color="grey" textAlign='justify' w='600px'>Sou estudante de Engenharia da Computação, atualmente no 6º semestre, 
+                <Flex justify='center' flexDirection='column' align='center' margin={['5px','10px']} padding='10px'>
+                    <TextFontAbout content="Sobre Mim"/>
+                    <TextAbout content="Sou estudante de Engenharia da Computação, atualmente no 6º semestre, 
                         em busca de oportunidades de estágio na área de desenvolvimento Web. Iniciei meus estudos de forma autodidata e complementei meu aprendizado com cursos online, 
                         sempre com o objetivo de me tornar um desenvolvedor Full Stack. Atualmente, estou desenvolvendo habilidades em Node.js e testes automatizados, 
-                        e estou entusiasmado para aplicar e expandir meus conhecimentos em um ambiente profissional.
-                    </Text>
+                        e estou entusiasmado para aplicar e expandir meus conhecimentos em um ambiente profissional."/>
                 </Flex>
                 <Spacer/>
-                <Flex justify='center' flexDirection='column' align='center' margin='10px' >
-                    <Text fontSize='2xl' color='#FEFDFB'>Minhas Principais Competências Tecnológicas.</Text>
-                    <Text fontSize='2xl' color="grey" textAlign='justify' w='600px'>Possuo experiência prática com HTML5, CSS3, TypeScript, React, e Node.js, o que me permite desenvolver aplicações completas e integradas, 
+                <Flex justify='center' flexDirection='column' align='center' margin={['5px','10px']} padding='10px'>
+                    <TextFontAbout content="Principais Competências Tecnológicas."/>
+                    <TextAbout content="Possuo experiência prática com HTML5, CSS3, TypeScript, React, e Node.js, o que me permite desenvolver aplicações completas e integradas, 
                         desde o front-end até o back-end. Estou sempre em busca de aprender novas técnicas e aprimorar minhas habilidades, 
-                        com o objetivo de entregar produtos de alta qualidade.</Text>
+                        com o objetivo de entregar produtos de alta qualidade."/>
                 </Flex>
             </Flex>
             <Spacer/>

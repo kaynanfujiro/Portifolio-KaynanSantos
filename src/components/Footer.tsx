@@ -9,10 +9,10 @@ import { BtnCurriculo } from "./BtnCurriculo";
 export const Footer = () => {
     return(
     <>
-    <Flex padding={10} justify='center' align='center' fontFamily='Roboto'>
+    <Flex padding={10} justify='center' align='center' fontFamily='Roboto' direction={['column','row']}>
         <Image src={animatedGif}/>
-        <Flex justify='center' align='flex-start' flexDirection='column'>
-        <Text fontSize="2xl" color="#FFFF">Gostou? Entre em contato.</Text>
+        <Flex justify='center' align='flex-start' direction='column'>
+        <Text fontSize={["xl","2xl"]} color="#FFFF">Gostou? Entre em contato.</Text>
             <HStack spacing={5}>
                 <Link to="https://github.com/kaynanfujiro/">
                     <Icon as={IconGit} boxSize='40px' transition="transform: 0.2s ease-in-out" _hover={{transform: "scale(1.2)"}}/>

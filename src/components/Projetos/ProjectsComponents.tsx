@@ -15,13 +15,13 @@ const CardProject = ({ImageProject,Title,Description,Tech,View,LinkUrl}: IProjec
     const {projetosRef} = useScrollRefs();
 
     return(
-        <Flex margin='15px' ref={projetosRef}>
-            <Box padding='5px' border='2px solid' borderColor='#09e85e' w='300px' h='335px'>
+        <Flex margin={['5px','15px']} ref={projetosRef} justifyContent='center'>
+            <Box padding='5px' border='2px solid' borderColor='#09e85e' w={['100%','300px']} h={['auto','335px']} maxW='300px'>
                 <Center>
-                    <Image w='300px' h='150px' src={ImageProject}/>
+                    <Image w='100%' h={['auto','150px']} src={ImageProject}/>
                 </Center>
-                <Text fontSize='1xl' color='#FEFDFB'>{Title}</Text>
-                <Text fontSize='lg' color='#7a878d' >{Description}</Text>
+                <Text fontSize={['lg','1xl']} color='#FEFDFB'>{Title}</Text>
+                <Text fontSize={['sm','lg']} color='#7a878d' >{Description}</Text>
                 <Wrap spacing={2} mt={2}>
                     {Tech.map((tech, index) => (
                         <WrapItem key={index}>
@@ -36,7 +36,7 @@ const CardProject = ({ImageProject,Title,Description,Tech,View,LinkUrl}: IProjec
                     ))}
                 </Wrap>
                 <Link href={LinkUrl} isExternal>
-                    <Text fontSize='lg' color='#FEFDFB'>
+                    <Text fontSize={['md','lg']} color='#FEFDFB'>
                         {View}
                     </Text>
                 </Link>
