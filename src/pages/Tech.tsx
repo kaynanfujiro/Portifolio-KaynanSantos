@@ -6,11 +6,16 @@ import logoTypeScript from "../Images/Logo-Typescript.svg"
 import logoReact from "../Images/Logo-React.svg"
 import logoNode from "../Images/Logo-Node.svg"
 import TechCards from "../components/Techs/TechsCards"
+import { useScrollRefs} from "../components/Scroll/ScrollRefSearch";
+
 
 export const Tech = () =>{
+
+    const {techRef} = useScrollRefs();
+
     return(
         <>
-        <Flex justify='center' marginTop='370px' fontFamily='Roboto'>
+        <Flex ref={techRef} justify='center' marginTop='370px' fontFamily='Roboto'>
             <Flex justify='center' flexDirection='column'>
                 <Flex justify='center' flexDirection='column' align='center' margin='10px'>
                     <Text fontSize='2xl' color='#FEFDFB'>Sobre Mim</Text>
@@ -20,7 +25,7 @@ export const Tech = () =>{
                         e estou entusiasmado para aplicar e expandir meus conhecimentos em um ambiente profissional.
                     </Text>
                 </Flex>
-            <Spacer/>
+                <Spacer/>
                 <Flex justify='center' flexDirection='column' align='center' margin='10px' >
                     <Text fontSize='2xl' color='#FEFDFB'>Minhas Principais Competências Tecnológicas.</Text>
                     <Text fontSize='2xl' color="grey" textAlign='justify' w='600px'>Possuo experiência prática com HTML5, CSS3, TypeScript, React, e Node.js, o que me permite desenvolver aplicações completas e integradas, 

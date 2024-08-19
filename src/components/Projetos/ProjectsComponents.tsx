@@ -1,5 +1,5 @@
 import { Box, Center, Flex, Image, Link, Text, Wrap, WrapItem } from '@chakra-ui/react'
-
+import { useScrollRefs } from '../Scroll/ScrollRefSearch';
 
 interface IProjectsComponents{
     ImageProject: string,
@@ -11,8 +11,11 @@ interface IProjectsComponents{
 }
 
 const CardProject = ({ImageProject,Title,Description,Tech,View,LinkUrl}: IProjectsComponents) => {
+
+    const {projetosRef} = useScrollRefs();
+
     return(
-        <Flex margin='15px'>
+        <Flex margin='15px' ref={projetosRef}>
             <Box padding='5px' border='2px solid' borderColor='#09e85e' w='300px' h='335px'>
                 <Center>
                     <Image w='300px' h='150px' src={ImageProject}/>

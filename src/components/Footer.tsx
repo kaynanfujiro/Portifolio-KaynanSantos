@@ -4,6 +4,7 @@ import { ReactComponent as IconGit } from "../Images/iconmonstr-github-1.svg";
 import { ReactComponent as IconLinkdin } from "../Images/linkedin-app-white-icon.svg";
 import { ReactComponent as IconMail } from "../Images/email-svgrepo-com.svg";
 import animatedGif from "../Images/Programmer-svg.gif";
+import { BtnCurriculo } from "./BtnCurriculo";
 
 export const Footer = () => {
     return(
@@ -23,7 +24,7 @@ export const Footer = () => {
                     <Icon as={IconMail} boxSize='40px' transition="transform: 0.2s ease-in-out" _hover={{transform: "scale(1.2)"}}/>
                 </Link>
             </HStack>
-                <Button bg='#219ebc' borderRadius='10px' color='white' transition="transform: 0.2s ease-in-out" _hover={{ boxShadow: '0px 0px 20px 5px #219ebc'}}>Currículo</Button>
+                <BtnCurriculo/>
         </Flex>
     </Flex>
     </>
