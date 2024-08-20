@@ -1,12 +1,11 @@
 import { Flex } from "@chakra-ui/react"
 import { DioBank, LegadoDoOeste } from "../components/Projetos/ProjetosInfos"
 
-
-
 export const Projetos = () =>{
+        
     return(
         <>
-        <Flex justify='Center' fontFamily='Roboto' direction={['column', 'row']}>
+        <Flex id="projetos-section" justify='Center' fontFamily='Roboto' direction={['column', 'row']}>
             <LegadoDoOeste/>
             <DioBank/>
         </Flex>

@@ -6,17 +6,15 @@ import logoTypeScript from "../Images/Logo-Typescript.svg"
 import logoReact from "../Images/Logo-React.svg"
 import logoNode from "../Images/Logo-Node.svg"
 import TechCards from "../components/Techs/TechsCards"
-import { useScrollRefs} from "../components/Scroll/ScrollRefSearch";
 import { TextAbout, TextFontAbout } from "../components/TextAbout"
 
 
 export const Tech = () =>{
 
-    const {techRef} = useScrollRefs();
 
     return(
         <>
-        <Flex ref={techRef} justify='center' marginTop='370px' fontFamily='Roboto' direction={['column','row']}>
+        <Flex id="tech-section" justify='center' marginTop='370px' fontFamily='Roboto' direction={['column','row']}>
             <Flex justify='center' flexDirection='column'>
                 <Flex justify='center' flexDirection='column' align='center' margin={['5px','10px']} padding='10px'>
                     <TextFontAbout content="Sobre Mim"/>
