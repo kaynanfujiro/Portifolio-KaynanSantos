@@ -33,7 +33,7 @@ const CardProject = ({ImageProject,Title,Description,Tech,View,LinkUrl}: IProjec
                         </WrapItem>
                     ))}
                 </Wrap>
-                <Link href={LinkUrl} isExternal>
+                <Link target="_blank" href={LinkUrl} isExternal>
                     <Text fontSize={['md','lg']} color='#FEFDFB'>
                         {View}
                     </Text>

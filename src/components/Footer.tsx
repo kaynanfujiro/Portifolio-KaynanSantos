@@ -14,13 +14,13 @@ export const Footer = () => {
         <Flex justify='center' align='flex-start' direction='column'>
         <Text fontSize={["xl","2xl"]} color="#FFFF">Gostou? Entre em contato.</Text>
             <HStack spacing={5}>
-                <Link to="https://github.com/kaynanfujiro/">
+                <Link target="_blank" to="https://github.com/kaynanfujiro/">
                     <Icon as={IconGit} boxSize='40px' transition="transform: 0.2s ease-in-out" _hover={{transform: "scale(1.2)"}}/>
                 </Link>
-                <Link to="https://www.linkedin.com/in/kaynan-felipe">
+                <Link target="_blank" to="https://www.linkedin.com/in/kaynan-felipe">
                     <Icon as={IconLinkdin} boxSize='40px' transition="transform: 0.2s ease-in-out" _hover={{transform: "scale(1.2)"}}/>
                 </Link>
-                <Link to="mailto: kaynanfelipe28@hotmail.com">
+                <Link target="_blank" to="mailto: kaynanfelipe28@hotmail.com">
                     <Icon as={IconMail} boxSize='40px' transition="transform: 0.2s ease-in-out" _hover={{transform: "scale(1.2)"}}/>
                 </Link>
             </HStack>
