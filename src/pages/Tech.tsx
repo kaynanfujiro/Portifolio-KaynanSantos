@@ -2,6 +2,7 @@ import { Flex, Spacer, Text } from "@chakra-ui/react"
 
 import logoHtml from "../Images/Logo-Html.svg"
 import logoCss from "../Images/Logo-Css.svg"
+import logoGithub from "../Images/Logo-Github.svg"
 import logoTypeScript from "../Images/Logo-Typescript.svg"
 import logoReact from "../Images/Logo-React.svg"
 import logoNode from "../Images/Logo-Node.svg"
@@ -34,13 +35,14 @@ export const Tech = () =>{
             <Spacer/>
             <Flex justify='center' align='center' flexDirection='column'>
                 <Flex>
-                    <TechCards src={logoHtml} alt={'Logo Html'}/>
-                    <TechCards src={logoCss} alt={'Logo Css'}/>
+                    <TechCards src={logoHtml} alt={'Logo Html'} text="HTML5"/>
+                    <TechCards src={logoCss} alt={'Logo Css'} text="CSS"/>
+                    <TechCards src={logoGithub} alt={'Logo GitHub'} text="Git | GitHub"/>
                 </Flex>
                 <Flex>
-                    <TechCards src={logoTypeScript} alt={'Logo TypeScript'}/>
-                    <TechCards src={logoReact} alt={'Logo React'}/>
-                    <TechCards src={logoNode} alt={'Logo Node'}/>
+                    <TechCards src={logoTypeScript} alt={'Logo TypeScript'} text="Typescript"/>
+                    <TechCards src={logoReact} alt={'Logo React'} text="React"/>
+                    <TechCards src={logoNode} alt={'Logo Node'} text="Node.js"/>
                 </Flex>
             </Flex>
         </Flex>
