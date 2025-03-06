@@ -2,6 +2,7 @@ import CardProject from "./ProjectsComponents"
 import ImageLegadoDoOeste from '../../Images/LegadoDoOeste.png'
 import ImageDioBank from '../../Images/DioBank.png'
 import ImageWeatherForecast from '../../Images/WeatherForecast.png'
+import ImageAnimeDex from '../../Images/AnimeDex.png'
 
 export const LegadoDoOeste = () => {
     return (
@@ -38,6 +39,19 @@ export const WeatherForecast = () => {
             Tech={["React", "Typescript", "Vite", "Axios"]}
             View="View project >"
             LinkUrl="https://weather-forecast-wheat-two.vercel.app"
+        />
+    )
+}
+
+export const AnimeDex = () => {
+    return (
+        <CardProject 
+            ImageProject={ImageAnimeDex} 
+            Title="Buscador de Animes - AnimeDex"
+            Description="Projeto para visualizar Animes atráves do Nome"
+            Tech={["React", "Typescript", "Vite", "Node", "Express"]}
+            View="View project >"
+            LinkUrl="https://animedex-wine.vercel.app"
         />
     )
 }
